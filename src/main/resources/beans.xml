@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+        <!--使用spring来创建对象，在spring这些都成为bena
+        id变量名,这只是到时候context调用的名字，和pojo的名字无关
+        class类型
+        property赋值-->
+        <bean id="hello" class="com.kuang.pojo.hello">
+                <!-- 这里的name必须是pojo里面set方法名后面的几个字母，而且首字母要小写-->
+        <property name="str" value="Spring"/>
+        </bean>
+</beans>
+
+
